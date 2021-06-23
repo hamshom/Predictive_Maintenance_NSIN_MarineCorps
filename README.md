@@ -15,3 +15,8 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 ### Marine Corps Team:
 1. Howard Ting
 2. Dana Lain
+
+
+### Dependencies:
+1. Flask
+  *  Flask is an open source lightweight web framework built in Python to deploy web applications.
