@@ -3,7 +3,7 @@
 
 
 ### Project Description:
-This is a joint collaboration between NSIN and Marine Corps to build an end to end predictive maintenance solution.
+This is a joint collaboration between NSIN and Marine Corps to build an end to end predictive maintenance solution. When we say we are going to deploy the model in production or productionalize the model, we are referring to integrating the machine learning model into an existing business application. In simple terms, we expose the ML model as REST API endpoints to serve the requests within the application platform or to direct user requests. 
 
 
 
