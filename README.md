@@ -18,4 +18,5 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 
 
 ### Dependencies:
-1. Flask: An open source lightweight web framework built in Python to deploy web applications.
+* Flask: An open source lightweight web framework built in Python to deploy web applications.
+* Docker: A computer program that performs operating-system-level virtualization, also known as containerization
