@@ -25,11 +25,18 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 
 
 ## Python Virtual Environment
-### Activate environment:
+### Activate environment in Terminal:
 * source test-env/env/Scripts/activate
 
-### Deactivate environment:
+### Deactivate environment in Terminal:
 * deactivate
 
 ### Adding new libraries to requiremnet.txt:
 * pip freeze > requirements.txt
+
+### Activating environmnet in Pycharm:
+* Ctrl + Alt + S or File / Settings
+* Project: your-name-project / Project Interpreter / Gear Icon / Add ...
+* Choose New environment
+* in Location: set your path / to / venv
+* Project Interpreter : path / to / venv / Scripts / python.exe
