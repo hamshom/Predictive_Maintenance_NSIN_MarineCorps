@@ -23,11 +23,13 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 * Jinja2: HTML framwor
 
 
-## Solution Design:
+## Solution Architecture:
 
-![Alt text](/images/NSIN_Solution_Architecture.png?raw=true "Optional Title")
+![Alt text](/images/NSIN_Solution_Architecture.png?raw=true "Solution Architecture")
 
-
+**Flask** is a very lightweight framework for developing APIs in Python. However, it does not come with a production-level server by default — it comes with Werkzeug, which isn’t suited for production (e.g. can only handle one request at a time).<br>
+**NGINX** is the web server and reverse proxy, that passes requests on to uWSGI.<br>
+**uWSGI** is an application server, which can communicate with the web server for receiving requests and forwards them to Flask via the WSGI protocol.<br>
 
 ## Python Virtual Environment
 ### Activate environment in Terminal:
