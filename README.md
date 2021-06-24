@@ -53,7 +53,7 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 
 
 
-### Resources:
+## Resources
 1. https://www.twilio.com/blog/deploy-flask-python-app-aws
 2. https://medium.datadriveninvestor.com/dockerizing-and-hosting-your-flask-web-app-rest-api-on-aws-ec2-9f9c189bf563
 3. http://alanpryorjr.com/2019-05-20-flask-api-example/
