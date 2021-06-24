@@ -46,8 +46,10 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 * Project Interpreter : path / to / venv / Scripts / python.exe
 
 
-
-
+## Repository Folder Structure
+* <ins>**config**</ins> define configuration management framework. The idea is to make the app behave according to configuration preset selected by the APP_ENV environment variable, plus, add an option to override any configuration setting with a specific environment variable if required.
+* <ins>**images**</ins> contains static images that are displayed in repo.
+* <ins>**test-env**</ins> contains virtual environment used to run build model and build docker container.
 
 
 
