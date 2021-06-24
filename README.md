@@ -21,3 +21,15 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 * Flask: An open source lightweight web framework built in Python to deploy web applications
 * Docker: A computer program that performs operating-system-level virtualization, also known as containerization
 * Jinja2: HTML framwor
+
+
+
+## Python Virtual Environment
+### Activate environment:
+* source test-env/env/Scripts/activate
+
+### Deactivate environment:
+* deactivate
+
+### Adding new libraries to requiremnet.txt:
+* pip freeze > requirements.txt
