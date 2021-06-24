@@ -21,11 +21,11 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 
 ![Alt text](/images/NSIN_Solution_Architecture.png?raw=true "Solution Architecture")
 
-**Flask** It is a micro web framework written in Python. It helps us to develop application programming interface (API) or a web application that responds to the request.<br>
-**NGINX** is the web server and reverse proxy, that passes requests on to uWSGI.<br>
-**uWSGI** is an application server, which can communicate with the web server for receiving requests and forwards them to Flask via the WSGI protocol.<br>
-**Docker** computer program that performs operating-system-level virtualization, also known as containerization.<br>
-**Jinja2** HTML framwork to interact with API.<br>
+<ins>**Flask**</ins> It is a micro web framework written in Python. It helps us to develop application programming interface (API) or a web application that responds to the request.<br>
+<ins>**NGINX**</ins> is the web server and reverse proxy, that passes requests on to uWSGI.<br>
+<ins>**uWSGI**</ins> is an application server, which can communicate with the web server for receiving requests and forwards them to Flask via the WSGI protocol.<br>
+<ins>**Docker**</ins> computer program that performs operating-system-level virtualization, also known as containerization.<br>
+<ins>**Jinja2**</ins> HTML framwork to interact with API.<br>
 
 
 ## Python Virtual Environment
