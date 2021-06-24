@@ -40,3 +40,23 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 * Choose New environment
 * in Location: set your path / to / venv
 * Project Interpreter : path / to / venv / Scripts / python.exe
+
+
+
+
+
+
+
+
+
+### Resources:
+1. https://www.twilio.com/blog/deploy-flask-python-app-aws
+2. https://medium.datadriveninvestor.com/dockerizing-and-hosting-your-flask-web-app-rest-api-on-aws-ec2-9f9c189bf563
+3. http://alanpryorjr.com/2019-05-20-flask-api-example/
+4. https://github.com/noahgift/Python-MLOps-Cookbook
+5. https://www.toptal.com/flask/flask-production-recipes
+6. https://www.datacamp.com/community/tutorials/machine-learning-models-api-python
+7. https://sonusharma-mnnit.medium.com/building-a-microservice-in-python-ff009da83dac
+8. https://gabimelo.medium.com/developing-a-flask-api-in-a-docker-container-with-uwsgi-and-nginx-e089e43ed90e
+9. https://blog.usejournal.com/a-guide-to-deploying-machine-deep-learning-model-s-in-production-e497fd4b734a
+10. https://analyticsindiamag.com/hands-on-guide-to-machine-learning-model-deployment-using-flask/
