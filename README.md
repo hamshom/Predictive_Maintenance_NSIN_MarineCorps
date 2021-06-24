@@ -30,3 +30,6 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 
 ### Deactivate environment:
 * deactivate
+
+### Adding new libraries to requiremnet.txt:
+* pip freeze > requirements.txt
