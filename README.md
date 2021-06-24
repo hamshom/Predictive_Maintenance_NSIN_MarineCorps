@@ -23,6 +23,11 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 * Jinja2: HTML framwor
 
 
+## Solution Design:
+
+![Alt text](/images/NSIN_Solution_Architecture.png?raw=true "Optional Title")
+
+
 
 ## Python Virtual Environment
 ### Activate environment in Terminal:
