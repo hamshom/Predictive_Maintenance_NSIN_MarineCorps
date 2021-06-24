@@ -34,7 +34,7 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 ### Adding new libraries to requiremnet.txt:
 * pip freeze > requirements.txt
 
-### Activating environmnet in Pycharm:
+### Activating environment in Pycharm:
 * Ctrl + Alt + S or File / Settings
 * Project: your-name-project / Project Interpreter / Gear Icon / Add ...
 * Choose New environment
