@@ -17,12 +17,6 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 2. Dana Lain
 
 
-### Dependencies:
-* Flask: An open source lightweight web framework built in Python to deploy web applications
-* Docker: A computer program that performs operating-system-level virtualization, also known as containerization
-* Jinja2: HTML framwor
-
-
 ## Solution Architecture:
 
 ![Alt text](/images/NSIN_Solution_Architecture.png?raw=true "Solution Architecture")
@@ -30,6 +24,9 @@ This is a joint collaboration between NSIN and Marine Corps to build an end to e
 **Flask** It is a micro web framework written in Python. It helps us to develop application programming interface (API) or a web application that responds to the request.<br>
 **NGINX** is the web server and reverse proxy, that passes requests on to uWSGI.<br>
 **uWSGI** is an application server, which can communicate with the web server for receiving requests and forwards them to Flask via the WSGI protocol.<br>
+**Docker** computer program that performs operating-system-level virtualization, also known as containerization.<br>
+**Jinja2** HTML framwork to interact with API.<br>
+
 
 ## Python Virtual Environment
 ### Activate environment in Terminal:
