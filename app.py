@@ -3,8 +3,10 @@ import os
 import config
 from api import api
 
+
 from flask import Flask, request, jsonify, render_template
 import pickle
+import numpy as np
 
 from models import db
 
@@ -15,13 +17,14 @@ logging.basicConfig(level=logging.DEBUG,
 
 logger = logging.getLogger()
 
+model = pickle.load(open('model.pkl', 'rb'))
+# model = pickle.load(open('regressor.pkl','rb'))
 
 def create_app():
     logger.info(f'Starting app in {config.APP_ENV} environment')
     app = Flask(__name__)
     app.config.from_object('config')
     api.init_app(app)
-    model = pickle.load(open('model.pkl', 'rb'))
 
     # initialize SQLAlchemy
     db.init_app(app)
@@ -32,6 +35,7 @@ def create_app():
     # def hello_world():
     #     return 'Hello, World!'
 
+    # to tell flask what url shoud trigger the function home()
     @app.route('/')
     def home():
         return render_template('index.html')
