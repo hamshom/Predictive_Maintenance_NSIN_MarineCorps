@@ -1,15 +1,29 @@
-FROM python:3.7.2
+FROM python:3.7
 
-RUN pip install pipenv
 
-ADD . /flask-deploy
+# Copy local directory to /app in container
+# Dont use COPY * /app/ , * will lead to lose of folder structure in /app
+COPY . /app/
 
-WORKDIR /flask-deploy
+# Change WORKDIR
+WORKDIR /app
 
-RUN pipenv install --system --skip-lock
+# Install dependencies
+# use --proxy http://<proxy host>:port if you have proxy
+RUN pip install -r requirements.txt
 
-RUN pip install gunicorn[gevent]
+CMD python app.py
 
-EXPOSE 5000
+# RUN pip install pipenv
+#
+# ADD . /flask-deploy
+#
+# WORKDIR /flask-deploy
+#
+# RUN pipenv install --system --skip-lock
+#
+# RUN pip install gunicorn[gevent]
+#
+# EXPOSE 5000
 
-CMD gunicorn --worker-class gevent --workers 8 --bind 0.0.0.0:5000 wsgi:app --max-requests 10000 --timeout 5 --keep-alive 5 --log-level info
+# CMD gunicorn --worker-class gevent --workers 8 --bind 0.0.0.0:5000 wsgi:app --max-requests 10000 --timeout 5 --keep-alive 5 --log-level info
