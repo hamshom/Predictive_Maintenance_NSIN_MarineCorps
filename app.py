@@ -29,11 +29,6 @@ def create_app():
     # initialize SQLAlchemy
     db.init_app(app)
 
-    # define hello world page
-
-    # @app.route('/')
-    # def hello_world():
-    #     return 'Hello, World!'
 
     # to tell flask what url shoud trigger the function home()
     @app.route('/')
@@ -46,12 +41,18 @@ def create_app():
         For rendering results on HTML GUI
         '''
         int_features = [int(x) for x in request.form.values()]
+
         final_features = [np.array(int_features)]
         prediction = model.predict(final_features)
 
         output = round(prediction[0], 2)
 
-        return render_template('index.html', prediction_text='Employee Salary should be $ {}'.format(output))
+        if output > 1000:
+            fail = "True"
+        else:
+            fail = "False"
+
+        return render_template('index.html', prediction_text='Will the equipment fail: {}'.format(fail))
 
     return app
 
